@@ -15,7 +15,7 @@ if(userWeb === 'personal'){
 var userName = prompt('enter your username')
 var userPass = prompt('enter your password')
 while(userPass !== "0000") {
-userPass = prompt('Invalid password, please enter the correct one')
+userPass = prompt('Invalid password, please enter the correct one "0000"')
 }
 var imgCount = prompt('What the number of websites do you want?')
 var webType = prompt('What type of website do you prefer?Personal/Blog/Business/Store')
