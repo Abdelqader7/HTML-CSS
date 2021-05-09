@@ -37,8 +37,12 @@ for(var x= 0; x < imgCount; x++){
 }
 showSites()
 var starNum = prompt('What star rating would you give, 1-5?')
-var image = ''
+function starNumber(){
+  var image = ''
 for(var i = 0; i < starNum ;i++){
     image = image + '<img src="http://icons.iconarchive.com/icons/cheezen/web-2/128/star-icon.png">'
 }
   document.write(image)
+}
+starNumber()
+alert('Thank you to choose our services')
