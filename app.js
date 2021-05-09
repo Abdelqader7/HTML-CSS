@@ -14,11 +14,14 @@ if(userWeb === 'personal'){
 }*/
 var userName = prompt('enter your username')
 var userPass = prompt('enter your password')
-while(userPass !== "0000") {
-userPass = prompt('Invalid password, please enter the correct one "0000"')
+function userPassword(){
+while(userPass !== "0000"){
+userPass = prompt('Invalid password, please enter the correct one "0000"')}
 }
+userPassword()
 var imgCount = prompt('What the number of websites do you want?')
 var webType = prompt('What type of website do you prefer?Personal/Blog/Business/Store')
+function showSites(){
 var image2 = ''
 for(var x= 0; x < imgCount; x++){
   if(webType === 'Business'){
@@ -31,6 +34,8 @@ for(var x= 0; x < imgCount; x++){
     image2 = image2 + '<img src="https://colorlib.com/wp/wp-content/uploads/sites/2/personal-free-template.jpg">'}
 }
   document.write(image2)
+}
+showSites()
 var starNum = prompt('What star rating would you give, 1-5?')
 var image = ''
 for(var i = 0; i < starNum ;i++){
